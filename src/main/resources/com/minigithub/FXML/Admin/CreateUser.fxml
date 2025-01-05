@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" styleClass="create_client_container" stylesheets="@../../Styles/CreateUser.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minigithub.controllers.Admin.CreateUserController">
+   <children>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New User Account" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="100.0">
+         <image>
+            <Image url="@../../Images/github-logo.png" />
+         </image>
+      </ImageView>
+      <VBox fillWidth="false" layoutX="14.0" layoutY="49.0" prefHeight="600.0" prefWidth="600.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+            <TextField fx:id="usrName_fld" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description(optional)" />
+            <TextField fx:id="description_fld" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+            <TextField fx:id="password_fld" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Job Title" />
+            <TextField fx:id="jobtitle_fld" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="GitHub's Passkey" />
+            <TextField fx:id="passkey_fld" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Work Email" />
+            <TextField fx:id="email_fld" promptText="example@email.com" />
+            <Button fx:id="createUser_btn" mnemonicParsing="false" text="Create New User" />
+            <Label fx:id="error_lbl" styleClass="error_lbl" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

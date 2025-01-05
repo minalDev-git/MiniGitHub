@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!-- WE have removed the controller over here and we'll use pre-constructed controllers b/c the UI is built in FXML-->
+<!-- We will create a factory class to controlls cell in the Views folder -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="800.0" styleClass="cell_container" stylesheets="@../../Styles/RepositoryCell.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="date_lbl" layoutX="77.0" layoutY="18.0" styleClass="date_lbl" text="2022-27-10" AnchorPane.topAnchor="18.0" />
+      <Label fx:id="name_lbl" layoutX="207.0" layoutY="18.0" styleClass="name_lbl" text="Repo/FileName" AnchorPane.topAnchor="18.0" />
+      <Label fx:id="msg_lbl" layoutX="428.0" layoutY="17.0" styleClass="msg_lbl" text="Commit msg" wrapText="true" AnchorPane.topAnchor="17.0" />
+      <FontAwesomeIconView glyphName="FILE" layoutX="31.0" layoutY="32.0" size="20.0" />
+      <Button fx:id="delete_btn" layoutX="684.0" layoutY="11.0" mnemonicParsing="false" text="Delete" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="11.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="20.0" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

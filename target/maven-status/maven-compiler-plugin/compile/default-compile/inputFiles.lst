@@ -1,0 +1,15 @@
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/App.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/controllers/LoginController.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/controllers/User/UserController.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/controllers/User/UserMenuController.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/database/MongoDBConnection.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/Views/ViewScenes.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/module-info.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/controllers/User/RepositoryController.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/controllers/User/DashboardController.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/controllers/RepositoryController.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/controllers/Admin/AdminController.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/MongoDBData.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/database/GridFSUtility.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/MongoDBExample.java
+/home/minal/Desktop/jfx/minigithub/src/main/java/com/minigithub/model/Model.java

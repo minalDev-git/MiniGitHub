@@ -1,0 +1,22 @@
+ .users_container {
+    -fx-background-color: #eeeeee;
+}
+.users_container Text{
+    -fx-fill: #000000;
+    -fx-font-size: 1.8em;
+}
+.users_container .list-view {
+    -fx-background-color: #eeeeee;
+    -fx-padding: 10;
+}
+.users_container .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-pref-width: 700;
+}
+.list-cell{
+    -fx-padding: 15 0 15 0;
+    -fx-spacing: 10;
+}
+.users_container.scroll-bar:vertical{
+    -fx-scale-x: 0;
+}

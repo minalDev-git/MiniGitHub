@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" styleClass="dashboard" stylesheets="@../../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minigithub.controllers.User.DashboardController">
+   <children>
+      <Text fx:id="dashboard_user" layoutX="21.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="user_name" text="Hi," AnchorPane.leftAnchor="20.0" />
+      <Text layoutX="22.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="GitHub Stats" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="80.0" />
+      <Text layoutX="45.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Recently Added Repositories" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="340.0" />
+      <FontAwesomeIconView glyphName="FOLDER" layoutX="20.0" layoutY="355.0" size="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="340.0" />
+      <VBox prefHeight="180.0" prefWidth="410.0" styleClass="account_view" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="110.0">
+         <children>
+            <Label fx:id="total_repos" styleClass="account_view_lbl" text="Total Repositories:">
+               <graphic>
+                  <FontAwesomeIconView glyphName="FOLDER" size="20.0" />
+               </graphic>
+            </Label>
+            <Label fx:id="total_commits" layoutX="10.0" layoutY="10.0" styleClass="account_view_lbl" text="Total Commits">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ARROW_UP" size="20.0" />
+               </graphic>
+            </Label>
+            <Label fx:id="dashboard_email" layoutX="10.0" layoutY="10.0" styleClass="account_view_lbl" text="Email:">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ENVELOPE" size="20.0" />
+               </graphic>
+            </Label>
+            <Label fx:id="dashboard_job_title" layoutX="10.0" layoutY="10.0" styleClass="account_view_lbl" text="Job Title:">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER_CIRCLE" size="20.0" />
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+      <Text layoutX="596.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Streaks" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="340.0" />
+      <ListView fx:id="recent_repos_listview" layoutX="14.0" layoutY="375.0" prefHeight="365.0" prefWidth="474.0" scaleShape="false" styleClass="repository_listview" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="370.0" />
+      <VBox prefHeight="366.0" prefWidth="240.0" styleClass="streak_container" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="370.0">
+         <children>
+            <Text fx:id="longest_streak" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Label text="Longest Streak" />
+            <Label fx:id="streak_dates" text="11-Oct - 10 Oct" wrapText="true" />
+            <Text fx:id="current_streak" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Label text="Current Streak" />
+            <Label fx:id="login_date" text="Today's Date" />
+         </children>
+      </VBox>
+      <AnchorPane layoutX="596.0" layoutY="101.0" prefHeight="300.0" prefWidth="300.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../../Images/github-logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="userlevel_lbl" layoutX="342.0" layoutY="77.0" styleClass="user_level" text="Casual User" wrapText="true" AnchorPane.leftAnchor="342.0" />
+   </children>
+</AnchorPane>

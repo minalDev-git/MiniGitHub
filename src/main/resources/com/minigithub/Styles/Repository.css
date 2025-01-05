@@ -1,0 +1,28 @@
+.repositories_container {
+    -fx-background-color: #eeeeee;
+}
+.repositories_container Text{
+    -fx-fill: #000000;
+    -fx-font-size: 2.5em;
+}
+.repositories_container .list-view {
+    -fx-background-color: #eeeeee;
+}
+.repositories_container .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-pref-width: 750;
+}
+.list-cell{
+    -fx-padding: 15 0 15 0;
+}
+.repositories_listview.scroll-bar:vertical{
+    -fx-scale-x: 0;
+}
+.bottom-buttons {
+    -fx-background-color: #1f883d;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10
+}
+.bottom-buttons FontAwesomeIconView {
+    -fx-fill: #ffffff;
+}

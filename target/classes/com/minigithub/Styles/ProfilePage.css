@@ -1,0 +1,68 @@
+/* General Grid Container Styling */
+/* Styling for AnchorPane */
+.anchor-pane {
+    -fx-background-color: #eeeeee; /* Lightest green background */
+}
+.anchor-pane VBox{
+    -fx-spacing: 10;
+    -fx-padding: 10;
+}
+
+.grid-container {
+    -fx-padding: 20px;
+    -fx-background-color: #eeeeee; /* Light green background */
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-border-color: #A5D6A7; /* Border with a slightly darker green */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+/* Title Styling */
+.title {
+    -fx-font-size: 40px; /* Slightly larger font */
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-padding: 10px 0;
+}
+
+/* Description Styling */
+.description {
+    -fx-font-size: 18px; /* Increase readability */
+    -fx-text-fill: #aaaaaa; /* Slightly darker gray */
+    -fx-font-style: italic;
+    -fx-padding: 5px 0;
+}
+
+/* Labels (Job Title, Email, Description) */
+.label {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: #000000; /* Dark gray for better contrast */
+}
+.error {
+    -fx-font-size: 13px;
+    -fx-text-fill: #ff0000;
+}
+
+
+/* Button Styling */
+.button {
+    -fx-background-color: linear-gradient(#66BB6A, #388E3C); /* Gradient for better look */
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #4CAF50; /* Slightly lighter green on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #2E7D32; /* Dark green for click feedback */
+}

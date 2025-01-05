@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" stylesheets="@../../Styles/CreateRepo.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minigithub.controllers.User.CreateRepoController">
+   <children>
+      
+      
+      <Text layoutX="253.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a new repository" wrappingWidth="343.714599609375">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="185.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A repository contains all project files, including the revision history. ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Line endX="630.7999877929688" layoutX="138.0" layoutY="161.0" startX="-100.0" />
+      <Text layoutX="38.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Required fields are marked with an asteric (*). ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="40.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Owner * ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="owner_fld" editable="false" layoutX="38.0" layoutY="224.0" prefHeight="26.0" prefWidth="130.0" text="owner" />
+      <Text layoutX="40.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repository name * ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="reponame_fld" layoutX="38.0" layoutY="286.0" promptText="name of repository" />
+      <Text layoutX="40.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="description_fld" layoutX="38.0" layoutY="374.0" prefHeight="1.0" prefWidth="410.0" promptText="Optional" />
+      <Line endX="636.2000122070312" layoutX="138.0" layoutY="424.0" startX="-100.0" AnchorPane.topAnchor="423.5" />
+      <Button fx:id="createrepo_btn" layoutX="40.0" layoutY="512.0" mnemonicParsing="false" text="Create Repository" />
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="576.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/github-logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="error_lbl" layoutX="40.0" layoutY="317.0" textFill="RED" />
+      <Text layoutX="40.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a README file">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="readme_box" layoutX="38.0" layoutY="473.0" mnemonicParsing="false" text="Add a README" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+.auth_container {
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 10;
+}
+.auth_container Text {
+    -fx-font-size: 1.6em;
+    -fx-font-weight: bold;
+}
+.auth_container VBox {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+.auth_container TextField {
+    -fx-font-size: 1.2em;
+    -fx-text-fill: #000000;
+    -fx-border-radius: 5;
+}
+.auth_container Button {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #1f883d;
+    -fx-padding: 10;
+}

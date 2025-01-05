@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" styleClass="fileview_container" stylesheets="@../../Styles/FileView.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minigithub.controllers.User.FileViewController">
+   <children>
+      <Text fx:id="filename" layoutX="94.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FileName.extention" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="30.0" />
+      <Button fx:id="edit_btn" layoutX="772.0" layoutY="109.0" mnemonicParsing="false" styleClass="fileview_btn" text="Edit File" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="100.0">
+         <graphic>
+            <FontAwesomeIconView fx:id="edit_icon" glyphName="EDIT" size="20.0" />
+         </graphic>
+      </Button>
+      <Button fx:id="copycode_btn" layoutX="571.0" layoutY="109.0" mnemonicParsing="false" styleClass="fileview_btn" text="Copy to Clipboard" AnchorPane.topAnchor="100.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="COPY" size="20.0" />
+         </graphic>
+      </Button>
+      <FontAwesomeIconView glyphName="GITHUB" layoutX="22.0" layoutY="62.0" size="50.0" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="19.14285659790039" />
+      <Button fx:id="back_btn" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" styleClass="fileview_btn" text="Back" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="100.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" size="15.0" />
+         </graphic>
+      </Button>
+      <Button fx:id="savefile_btn" layoutX="98.0" layoutY="100.0" mnemonicParsing="false" styleClass="fileview_btn" text="Save" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="SAVE" size="15.0" />
+         </graphic>
+      </Button>
+      <Button fx:id="download_btn" layoutX="181.0" layoutY="100.0" mnemonicParsing="false" styleClass="fileview_btn" text="Download">
+         <graphic>
+            <FontAwesomeIconView glyphName="DOWNLOAD" size="15.0" />
+         </graphic>
+      </Button>
+      <TextArea fx:id="code_view" editable="false" layoutX="16.0" layoutY="164.0" prefHeight="517.0" prefWidth="822.0" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+   </children>
+</AnchorPane>

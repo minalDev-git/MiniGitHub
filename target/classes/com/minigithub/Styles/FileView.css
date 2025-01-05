@@ -1,0 +1,26 @@
+.fileview_container {
+    -fx-background-color: #eeeeee;
+}
+.fileview_container Text {
+    -fx-font-weight: bold;
+    -fx-font-size: 2em;
+}
+.fileview_container TextArea {
+    -fx-font-size: 1.2em;
+}
+.default {
+    -fx-fill: black;
+}
+
+.textarea.scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
+.fileview_btn {
+    -fx-padding: 10;
+    -fx-background-color: #1f883d;
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center;
+}
+.fileview_btn FontAwesomeIconView {
+    -fx-fill: #ffffff;
+}

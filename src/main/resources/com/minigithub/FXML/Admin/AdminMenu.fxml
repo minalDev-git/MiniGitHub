@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="180.0" styleClass="main_menu_container" stylesheets="@../../Styles/userMenu.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minigithub.controllers.Admin.AdminMenuController">
+   <children>
+      <AnchorPane prefHeight="750.0" prefWidth="160.0" styleClass="left_container">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="160.0" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView glyphName="USER_CIRCLE" size="40.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Admin " />
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="160.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Button fx:id="create_usr_btn" mnemonicParsing="false" text="Create User">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" size="20.0" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="users_btn" mnemonicParsing="false" text="Users">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="LIST" size="20.0" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="logout_btn" mnemonicParsing="false" styleClass="alt_menu_btn" text="Logout">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="20.0" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" styleClass="users_container" stylesheets="@../../Styles/Users.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minigithub.controllers.Admin.UsersController">
+   <children>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <ListView fx:id="users_listview" layoutX="14.0" layoutY="78.0" prefHeight="582.0" prefWidth="800.0" styleClass="scroll-bar" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="78.0" />
+   </children>
+</AnchorPane>

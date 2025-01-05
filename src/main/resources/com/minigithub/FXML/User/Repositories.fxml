@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" styleClass="repositories_container" stylesheets="@../../Styles/Repository.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minigithub.controllers.User.RepositoriesController">
+   <children>
+      <Text layoutX="366.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Repositories" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="14.0" />
+      <ListView fx:id="repository_listview" layoutX="332.0" layoutY="250.0" prefHeight="530.0" prefWidth="830.0" styleClass="repositories_listview" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="100.0" />
+      <Button fx:id="newrepo_btn" layoutX="14.0" layoutY="647.0" mnemonicParsing="false" styleClass="bottom-buttons" text="New Repository" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="14.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="FOLDER" />
+         </graphic>
+      </Button>
+      <Button fx:id="uploadrepo_btn" layoutX="165.0" layoutY="656.0" mnemonicParsing="false" styleClass="bottom-buttons" text="Upload Existing Repo" AnchorPane.bottomAnchor="25.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="UPLOAD" />
+         </graphic>
+      </Button>
+      <Button fx:id="downloadrepo_btn" layoutX="354.0" layoutY="656.0" mnemonicParsing="false" styleClass="bottom-buttons" text="Download" AnchorPane.bottomAnchor="25.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="DOWNLOAD" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

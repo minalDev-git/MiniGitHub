@@ -1,0 +1,43 @@
+.create_client_container {
+    -fx-background-color: #eeeeee;
+}
+.create_client_container Text {
+    -fx-font-size: 1.2em;
+    -fx-fill: #000000;
+}
+.create_client_container VBox {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #000000;
+    -fx-padding: 10;
+    -fx-spacing: 15;
+}
+.create_client_container TextField {
+    -fx-pref-width: 300;
+    -fx-pref-height: 35;
+    -fx-font-size: 1.2em;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(three-pass-box,#aaaaaa,3,0,0,3);
+}
+.passkey_lbl {
+    -fx-pref-width: 300;
+    -fx-pref-height: 30;
+    -fx-padding: 5;
+    -fx-background-color: #888888;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 1.2em;
+    -fx-effect: dropshadow(three-pass-box,#aaaaaa,3,0,0,3);
+}
+.create_client_container Button {
+    -fx-background-color: #1f883d;
+    -fx-effect: dropshadow(three-pass-box,#aaaaaa,3,0,0,3);
+    -fx-pref-width: 300;
+    -fx-font-size: 1.3em;
+    -fx-text-fill: #ffffff;
+}
+.create_client_container Button:hover {
+    -fx-cursor: hand;
+}
+.error_lbl {
+    -fx-text-fill: #ff0000;
+}

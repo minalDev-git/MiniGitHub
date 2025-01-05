@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id= "admin_parent" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <fx:include source="AdminMenu.fxml"></fx:include>
+    </left>
+    <center>
+        <fx:include source="CreateUser.fxml"></fx:include>
+    </center>
+</BorderPane>
+<!-- we removed the controller over here, we'll need to add it manually in ViewScenes -->
